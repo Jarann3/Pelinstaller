@@ -43,7 +43,8 @@ error() {
 }
 
 # Parse args
-REPO="${REPO:-Zinidia/Pelinstaller}"
+# CHANGE: Default repo changed to your fork
+REPO="${REPO:-Jarann3/Pelinstaller}"
 BRANCH="${BRANCH:-Production}"
 MODE=""
 
