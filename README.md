@@ -9,7 +9,7 @@
 3) To download and run the installer, simply enter the following command into your terminal and follow the prompts:
 
 ```bash
-bash <(curl -Ss https://raw.githubusercontent.com/Zinidia/Pelinstaller/Production/install.sh || wget -O - https://raw.githubusercontent.com/Zinidia/Pelinstaller/Production/install.sh)
+bash <(curl -Ss https://raw.githubusercontent.com/Jarann3/Pelinstaller/Production/install.sh || wget -O - https://raw.githubusercontent.com/Jarann3/Pelinstaller/Production/install.sh)
 ```
 
 _Note: On some systems, it's required to be already logged in as root before executing the one-line command (where `sudo` is in front of the command does not work)._
