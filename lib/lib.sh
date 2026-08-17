@@ -48,7 +48,7 @@ export ARCH=""
 export SUPPORTED=false
 
 # Download URLs
-export PANEL_DL_URL="${PANEL_DL_URL:-https://github.com/pelican-dev/panel/releases/latest/download/panel.tar.gz}"
+export PANEL_DL_URL="${PANEL_DL_URL:-https://github.com/pelican/panel/releases/latest/download/panel.tar.gz}"
 export WINGS_DL_URL="https://github.com/pelican-dev/wings/releases/latest/download/wings_linux_"
 # Repo arg defaults
 export REPO="${REPO:-Zinidia/Pelinstaller}"
@@ -131,7 +131,7 @@ welcome() {
   output "Using repo $REPO (branch $BRANCH)."
   output "Running $OS version $OS_VER."
   if [ "$1" == "panel" ]; then
-    output "Latest pelican-dev/panel is $PELICAN_PANEL_VERSION"
+    output "Latest pelican/panel is $PELICAN_PANEL_VERSION"
   elif [ "$1" == "wings" ]; then
     output "Latest pelican-dev/wings is $PELICAN_WINGS_VERSION"
   fi
@@ -147,7 +147,7 @@ get_latest_release() {
 
 get_latest_versions() {
   output "Retrieving release information .."
-  PELICAN_PANEL_VERSION=$(get_latest_release "pelican-dev/panel")
+  PELICAN_PANEL_VERSION=$(get_latest_release "pelican/panel")
   PELICAN_WINGS_VERSION=$(get_latest_release "pelican-dev/wings")
 }
 
